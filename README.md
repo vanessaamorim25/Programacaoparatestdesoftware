@@ -14,3 +14,5 @@ Crie uma classe que possua dois métodos: um para realizar pagamento e outro par
   }
   
   A entregua deve ser realizada via Github e o repositório deve ter a classe a pasta src e os testes dos métodos dessa classe dentro da pasta test usando Mocha e Node Assert.
+
+  oi 
