@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '32 23 * * *'
+    - cron: '38 23 * * *'
 
 jobs:
   testes:
@@ -25,6 +25,7 @@ jobs:
 
     - name: Instalar dependências
       run: npm install
+
 
     - name: Executar testes
       run: npx mocha
