@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '0 21 * * *'
+    - cron: '32 23 * * *'
 
 jobs:
   testes:
@@ -27,7 +27,7 @@ jobs:
       run: npm install
 
     - name: Executar testes
-      run: npm test
+      run: npx mocha
 
     - name: Publicar relatório
       uses: actions/upload-artifact@v4
