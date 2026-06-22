@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2026-06-22T00:20:55.925Z",
-    "end": "2026-06-22T00:20:55.929Z",
-    "duration": 4,
+    "start": "2026-06-22T00:33:22.572Z",
+    "end": "2026-06-22T00:33:22.575Z",
+    "duration": 3,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f79beb05-87e6-4d8b-bde7-26a395c1b64f",
+      "uuid": "abeb0df2-20e2-4635-9a9b-2522459f1a68",
       "title": "",
       "fullFile": "C:\\QA\\Programacaoparatestdesoftware\\test\\gestaoDePagamentos.test.js",
       "file": "\\test\\gestaoDePagamentos.test.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "44d4f366-d461-40d2-b836-13f8e4de5e33",
+          "uuid": "fb8e6c3b-8b43-4dc9-b373-f90c2b76737a",
           "title": "Testes de gestao de Pagamentos",
           "fullFile": "C:\\QA\\Programacaoparatestdesoftware\\test\\gestaoDePagamentos.test.js",
           "file": "\\test\\gestaoDePagamentos.test.js",
@@ -38,7 +38,7 @@
               "title": "Validar que o pagamento recebe a categoria cara quando o valor é  1100",
               "fullTitle": "Testes de gestao de Pagamentos Validar que o pagamento recebe a categoria cara quando o valor é  1100",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "// Arrange\n    const categoriaEsperada = 'cara';\n    // Act\n    const pagamentoRetornado = pagar(\n        'Codigo01',\n        'empresa 01',\n        1100\n    );\n    // Assert\n    assert.equal(pagamentoRetornado.categoria,categoriaEsperada);",
               "err": {},
-              "uuid": "2450810f-c4a9-4580-8273-d69cc0fa8078",
-              "parentUUID": "44d4f366-d461-40d2-b836-13f8e4de5e33",
+              "uuid": "4697473d-2877-42bb-8758-f582a172964e",
+              "parentUUID": "fb8e6c3b-8b43-4dc9-b373-f90c2b76737a",
               "isHook": false,
               "skipped": false
             },
@@ -65,8 +65,8 @@
               "context": null,
               "code": "// Arrange\n    const categoriaEsperada = 'padrão';\n    // Act\n    const pagamentoRetornado = pagar(\n        'Codigo02',\n        'empresa 02',\n        80\n    );\n    // Assert\n    assert.equal(pagamentoRetornado.categoria,categoriaEsperada);",
               "err": {},
-              "uuid": "1ae31b51-211f-4bb3-9980-b48a07c3e676",
-              "parentUUID": "44d4f366-d461-40d2-b836-13f8e4de5e33",
+              "uuid": "d983d6ff-58ef-466d-b239-aca2331a6860",
+              "parentUUID": "fb8e6c3b-8b43-4dc9-b373-f90c2b76737a",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Deve retornar o último pagamento realizado",
               "fullTitle": "Testes de gestao de Pagamentos Deve retornar o último pagamento realizado",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "// Arrange\n        pagar('Codigo03', 'Empresa 3', 200);\n        // Act\n        const ultimoPagamento = consultarUltimoPagamento();\n        // Assert\n        assert.deepEqual(\n            ultimoPagamento,\n            {\n                codigoBarras: 'Codigo03',\n                empresa: 'Empresa 3',\n                valor: 200,\n                categoria: 'cara'\n            }\n        );",
               "err": {},
-              "uuid": "a3063df3-2a55-4018-a8c7-294a9b146793",
-              "parentUUID": "44d4f366-d461-40d2-b836-13f8e4de5e33",
+              "uuid": "9356aa69-f554-4b21-b266-307d11a3da29",
+              "parentUUID": "fb8e6c3b-8b43-4dc9-b373-f90c2b76737a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2450810f-c4a9-4580-8273-d69cc0fa8078",
-            "1ae31b51-211f-4bb3-9980-b48a07c3e676",
-            "a3063df3-2a55-4018-a8c7-294a9b146793"
+            "4697473d-2877-42bb-8758-f582a172964e",
+            "d983d6ff-58ef-466d-b239-aca2331a6860",
+            "9356aa69-f554-4b21-b266-307d11a3da29"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 2,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
