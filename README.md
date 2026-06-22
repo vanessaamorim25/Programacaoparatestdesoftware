@@ -25,7 +25,7 @@ Pode ser executada através da opção Run Workflow na aba Actions.
 Utiliza cron:
 
 schedule:
-    - cron: '35 00  * * *'
+    - cron: '37 00  * * *'
 
 
 Executando diariamente às 00h 35m UTC.
